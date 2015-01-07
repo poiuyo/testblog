@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -23,13 +23,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-group :development do 
-	gem 'rspec-rails','2.0.1'
+group :development, :test do
+  gem 'rspec-rails', '2.14.2'
 end
 
-group :test	do
-	gem 'rspec','2.0.1'
-	gem 'webrat','0.7.1'
+group :test do
+  gem 'rspec', '2.14.1'
+  gem 'spork', '~> 0.9.0.rc'
 end
 
 # Use ActiveModel has_secure_password
